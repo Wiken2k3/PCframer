@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 50px 100px;
+    background: #333333;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .container .gthieu{
+    margin-left: 30px;
+    width: 40%;
+}
+footer .container .gthieu h2{
+    position: relative;
+    color:#a8e890;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+footer .container .gthieu h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: white;
+}
+footer .container .gthieu p{
+    color:white;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.muahang{
+    position: relative;
+    width: 25%;
+
+
+}
+
+.muahang h2{
+    position: relative;
+     color: white;
+     font-weight: bold;
+     margin-bottom: 15px;
+}
+
+.muahang h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: white;
+}
+
+.muahang ul li{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.time h2{
+    position: relative;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.time h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: white;
+}
+.time{
+    width: calc(30% - 55px);
+    margin-right: 0 !important;
+}
+
+.time ul li {
+    list-style: circle;
+    color: white;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: 800;
+    
+}
+
+.thongtin {
+    position: relative;
+    margin-left: 30px;
+    width: 40%;
+}
+
+.thongtin h2{
+    position: relative;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.thongtin h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: white;
+}
+
+.thongtin p{
+    color:white;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.thongtin a{
+    font-size: 30px;
+    font-weight: auto;
+}
+
+.chinhanh{
+    position: relative;
+    margin-right: 0;
+    width: 40%;
+}
+
+.chinhanh h2{
+    position: relative;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.chinhanh h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: white;
+}
+
+.chinhanh ul li{
+    list-style: circle;
+    color: white;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: 800;
+}

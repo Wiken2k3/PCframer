@@ -1,0 +1,308 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/quangcao.css">
+<link rel="stylesheet" href="css/sanpham.css">
+<link rel="stylesheet" href="css/khuyenmai.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="img">
+<link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+  <!-- header-->
+
+
+
+
+
+
+
+<!-- phần menu-->
+<div class="topnav">
+  <a class="active" href="trangchu.html">PCframer</a> 
+  <a href="sanpham.html">Sản phẩm</a>
+  <a href="tragop.html">Trả góp</a> 
+  <a href="lienhe.html">Thông tin</a>
+  <a href="Login.html">Login</a>
+  <div class="search-container">
+    <form action="/action_page.html">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+<!-- phần Quảng cáo-->
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="img/KM3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/KM4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/KM2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/KM1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/KM5.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/KM6.jpg" style="width:100%">
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+<!--Product-->
+<h1 class="danhmuc">Sản phẩm HOT</h1>
+<center>
+<table>
+<tr>
+  <td>
+    <div class="product-card">
+    <div class="badge">HOT</div>
+      <div class="product-tumb">
+        <img src="img/i9 11900K.jpg" alt="">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">CPU</span>
+        <h4><a href="">CPU Intel Core i9 11900K</a></h4>
+        <p>CPU Intel Core i9 11900K</p>
+        <div class="product-bottom-details">
+          <div class="product-price"><small>$21.000.000VNĐ</small>19.000.000VNĐ</div>
+          <div class="product-links">
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""><i class="fa fa-shopping-cart"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    
+    <div class="product-card">
+      <div class="badge">HOT</div>
+        <div class="product-tumb">
+          <img src="img/Fifa 23.jpg" alt="">
+        </div>
+        <div class="product-details">
+          <span class="product-catagory">PS & game</span>
+          <h4><a href="">Fifa 23 ps5</a></h4>
+          <p>Đĩa game Fifa 23 máy Ps5</p>
+          <div class="product-bottom-details">
+            <div class="product-price"><small>1.700.000VNĐ</small>1.500.000VNĐ</div>
+            <div class="product-links">
+              <a href=""><i class="fa fa-heart"></i></a>
+              <a href=""><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </td>
+  <td>
+    <div class="product-card">
+    <div class="badge">HOT</div>
+      <div class="product-tumb">
+        <img src="img/RAM Gigabyte Aorus RGB Memory 32GB (2x16GB) 6000 DDR5.jpg" alt="">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">RAM</span>
+        <h4><a href="">Ram Gigabyte Aorus 32GB</a></h4>
+        <p>RAM Gigabyte Aorus RGB Memory 32GB (2x16GB) 6000 DDR5</p>
+        <div class="product-bottom-details">
+          <div class="product-price"><small>12.590.000VNĐ</small>11.990.000VNĐ</div>
+          <div class="product-links">
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""><i class="fa fa-shopping-cart"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+</td>
+</tr>
+<tr>
+  <td>
+    <div class="product-card">
+    <div class="badge">HOT</div>
+      <div class="product-tumb">
+        <img src="img/i9 9900K.jpg" alt="">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">CPU</span>
+        <h4><a href="">CPU Intel Core i9 9900K</a></h4>
+        <p>CPU Intel Core i9 9900K</p>
+        <div class="product-bottom-details">
+          <div class="product-price"><small>15.000.000VNĐ</small>9.000.000VNĐ</div>
+          <div class="product-links">
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""><i class="fa fa-shopping-cart"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="product-card">
+      <div class="badge">HOT</div>
+      <div class="product-tumb">
+        <img src="img/ps5.jpg" alt="">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">PS & game</span>
+        <h4><a href="">Play Station 5</a></h4>
+        <p>Máy chơi game play station thế hệ thứ 5</p>
+        <div class="product-bottom-details">
+          <div class="product-price"><small>23.000.000VNĐ</small>20.000.000VNĐ</div>
+          <div class="product-links">
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""><i class="fa fa-shopping-cart"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="product-card">
+      <div class="badge">HOT</div>
+        <div class="product-tumb">
+          <img src="img/Ram 16gb.jpg" alt="">
+        </div>
+        <div class="product-details">
+          <span class="product-catagory">RAM</span>
+          <h4><a href="">RAM 16GB</a></h4>
+          <p>Ram Corsair Dominator Platinum 16GB (2x8GB) RGB 3200 White</p>
+          <div class="product-bottom-details">
+            <div class="product-price"><small>4.000.000VNĐ</small>3.790.000VNĐ</div>
+            <div class="product-links">
+              <a href=""><i class="fa fa-heart"></i></a>
+              <a href=""><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </td>
+</tr>
+</table>
+</center>
+<H1 class="danhmuc">Chương trình khuyến mãi</H1>
+<center>
+  <table>
+    <tr>
+      <td><img src="img/KM3.jpg" alt=""></td>
+      <td><img src="img/KM4.jpg" alt=""></td>
+    </tr>
+    <tr>
+      <td><img src="img/KM5.jpg" alt=""></td>
+      <td><img src="img/KM6.jpg" alt=""></td>
+    </tr>
+  </table>
+</center>
+
+
+
+
+
+</body>
+<!-- Bottom-->
+
+<footer style="background-color: #333333; color: white;">
+<div class="container">
+<div class="muahang">
+  <h2 style="color: #a8e890;">MUA HÀNG - GÓP Ý</h2>
+  <ul>
+    <li>Tổng đài: 1900 xxxx (1000đ/phút)</li>
+    <li>Hotline: 0764 xxx yyy</li>
+    <li>E-mail: shopgame@gmail.com</li>
+  </ul>
+</div>
+<div class="time">
+    <h2 style="color: #a8e890;">THỜI GIAN LÀM VIỆC</h2>
+    <ul><b><u>Thời gian mở cửa:</b></u>
+        <li>Các ngày trong tuần (T2 - T7): 9h - 21h</li>
+        <li>Chủ nhật và ngày lễ: 9h - 19h</li>
+    </ul>
+    <ul><b><u>Bảo hành sửa chữa:</b></u>
+        <li>Các ngày trong tuần (T2 - T7): 9h - 20h</li>
+        <li>Chủ nhật và ngày lễ: 9h - 12h</li>
+    </ul>
+</div>
+<div class="chinhanh">
+    <h2 style="color: #a8e890;">ĐỊA CHỈ</h2>
+    <ul>
+        <li><u>Cn 1:</u> 45 Nguyễn Khắc Nhu, Phường Cô Giang, Quận 1, HCM</li>
+        <li><u>CN 2:</u> 233A Đ. Phan Văn Trị, Phường 11, Bình Thạnh, HCM</li>
+        <li><u>Cn 3:</u> Hẻm 69/68 Đ. Đặng Thuỳ Trâm, Phường 13, Bình Thạnh, HCM</li>
+    </ul>
+</div>
+</div>
+</footer>
+</html>
+
+
+
+
+
+
+
+
+
+
